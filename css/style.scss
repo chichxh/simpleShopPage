@@ -1,0 +1,130 @@
+$black: #000;
+$white: #fff;  
+
+
+.main {
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+    font-family: Jost, Arial, Helvetica, sans-serif;
+    font-size: 1.15rem;
+    background-color: $white;
+}
+
+.btn {
+    border: 1px solid #000;
+    background-color: transparent;
+    padding: 20px 150px;
+    width: 100%;
+    font-family: Jost, Arial, Helvetica, sans-serif;
+    font-size: 1.15rem;
+    cursor: pointer;
+    margin-bottom: 38px;
+}
+.add {
+    display: flex;
+
+    .btn_addToCart {
+        width: 85%;
+        padding: 20px 100px 20px 35%;
+        background-color: #000;
+        color: #fff;
+        margin: 0;
+    }
+    .plus {
+        display: inline;
+        width: 15%;
+        background-color: #fff;
+        border: 1px solid #000;
+        border-left: none;
+    }
+}
+
+.arrow_btn {
+    display: flex;
+    margin-bottom: 38px;
+
+    .btn_arrow {
+        width: 85%;
+        padding: 20px 100px 20px 35%;
+        margin: 0;
+    }
+    .arrow {
+        display: inline;
+        width: 15%;
+        border: 1px solid #000;
+        border-left: none;
+        background-color: #fff;
+    }
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 2fr 1fr repeat(4, 0.3fr);
+    text-align: center;
+
+    .header__link {
+        padding-top: 14px;
+        border-left: 1px solid #000;
+    }
+    .header__logo {
+        padding-top: 5px;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        line-height: 46px;
+        letter-spacing: 0.64em;
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+    }
+    .header__search {
+        width: 90%;
+        display: inline;
+        margin: auto;
+        .search {
+            padding: 3px 105px;
+            border: 1px solid #000;
+            border-radius: 48px;
+            background-color: #E7E7E7;
+            text-align: center;
+        }
+    }
+    .header__icon {
+        padding-top: 14px;
+        border-left: 1px solid #000;
+    }
+}
+
+.wrapper {
+    margin: 160px 100px;
+    display: grid;
+    grid-template-columns: 10% 50% 40%;
+
+    .item_views {
+        text-align: center;
+    }
+    .item_photo {
+        text-align: center;
+        img {
+            box-shadow: 7px 13px 0px rgba(0, 0, 0, 0.75);
+        }
+    }
+    .item_det {
+        .item_name {
+            text-transform: uppercase;
+        }
+    }
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) 5fr;
+    text-align: center;
+
+    .footer__link {
+        border-left: 1px solid #000;
+    }
+
+    .footer__link.active {
+        background-color: #000;
+        color: #fff;
+    }
+}
